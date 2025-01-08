@@ -1,4 +1,4 @@
-package com.zxc.cxc.common;
+package com.zxc.cxc.openapi.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
