@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zxc-cxc-web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: zxc-cxc-web
+  template:
+    metadata:
+      labels:
+        app: zxc-cxc-web
+    spec:
+      containers:
+        - name: zxc-cxc-web
+          image: zixicat/zxc-cxc-web:latest
+          ports:
+            - containerPort: 80

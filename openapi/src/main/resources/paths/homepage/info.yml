@@ -1,12 +1,11 @@
 get:
-  summary: List
-  operationId: listPets
-  description: List all pets
+  summary: Home page summary
+  description: Home page description
   tags:
     - homepage
   responses:
     200:
-      description: A paged array of pets
+      description: Home page description for 200
       headers:
         x-next:
           description: A link to the next page of responses

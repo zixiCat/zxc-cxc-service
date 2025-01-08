@@ -67,7 +67,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <inputSpec>${project.basedir}/src/main/resources/k8s/index.yml</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/openapi.yml</inputSpec>
                             <generatorName>spring</generatorName>
                             <skipValidateSpec>true</skipValidateSpec>
                             <templateResourcePath>

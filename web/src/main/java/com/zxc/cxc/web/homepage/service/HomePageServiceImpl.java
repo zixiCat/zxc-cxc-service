@@ -1,16 +1,16 @@
 package com.zxc.cxc.web.homepage.service;
-// package com.zxc.cxc.homepage.service;
 
-// import org.openapitools.api;
-// import org.springframework.web.bind.annotation.RestController;
+import org.openapitools.api.HomepageApi;
+import org.openapitools.model.HomePageInfo;
+import org.springframework.web.bind.annotation.RestController;
 
-// import com.openapi.common.OpenAPIResponse;
+import com.zxc.cxc.openapi.common.OpenAPIResponse;
 
-// @RestController
-// public class HomePageServiceImpl implements UserApi {
 
-//   public OpenAPIResponse<User> userGet(Integer id) {
-//     User user = new User().id(id).name("Test User");
-//     return OpenAPIResponse.ok(user);
-//   }
-// }
+@RestController
+public class HomePageServiceImpl implements HomepageApi {
+  public OpenAPIResponse<HomePageInfo> homepageInfoGet() {
+    HomePageInfo homePageInfo = new HomePageInfo().intro("intro");
+    return OpenAPIResponse.ok(homePageInfo);
+  }
+}
