@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.zxc.cxc.openapi.common.OpenAPIResponse;
 
-
 @RestController
 public class HomePageServiceImpl implements HomepageApi {
   public OpenAPIResponse<HomePageInfo> homepageInfoGet() {
