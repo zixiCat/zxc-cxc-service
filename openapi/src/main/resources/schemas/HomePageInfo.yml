@@ -1,0 +1,8 @@
+type: object
+properties:
+  intro:
+    type: string
+  subIntro:
+    type: string
+  avatar:
+    type: string

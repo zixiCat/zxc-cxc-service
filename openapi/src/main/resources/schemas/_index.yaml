@@ -1,0 +1,6 @@
+HomePageInfo:
+  $ref: ./HomePageInfo.yml
+BaseResponse:
+  $ref: ./BaseResponse.yml
+Error:
+  $ref: ./Error.yml

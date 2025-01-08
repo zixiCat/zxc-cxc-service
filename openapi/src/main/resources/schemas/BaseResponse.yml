@@ -1,0 +1,16 @@
+type: object
+properties:
+  code:
+    type: integer
+    description: |
+      - code: 20000, message: "Success"
+      - code: 40000, message: "Bad Request"
+      - code: 40001, message: "Unauthorized"
+      - code: 40003, message: "Forbidden"
+      - code: 40004, message: "Not Found"
+      - code: 50000, message: "Internal Server Error"
+  message:
+    type: string
+  data:
+    type: any
+    description: "The response type"

@@ -1,0 +1,23 @@
+openapi: 3.0.3
+info:
+  version: 1.0.0
+  title: ZXC CXC Web
+  description: The response type of APIs are wrapped by "BaseResponse" type
+  license:
+    name: MIT
+  contact:
+    name: API Support
+    url: http://www.example.com/support
+    email: support@example.com
+servers:
+  - url: http://petstore.swagger.io/v1
+tags:
+  - name: homepage
+paths:
+  /homepage/info:
+    $ref: ./paths/homepage/info.yml
+components:
+  schemas:
+    $ref: ./schemas/_index.yaml
+  responses:
+    $ref: ./responses/_index.yaml
