@@ -43,6 +43,10 @@
             <artifactId>openapi-generator</artifactId>
             <version>7.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -70,6 +74,9 @@
                             <inputSpec>${project.basedir}/src/main/resources/openapi.yml</inputSpec>
                             <generatorName>spring</generatorName>
                             <skipValidateSpec>true</skipValidateSpec>
+                            <apiPackage>com.zxc.cxc.openapi.api</apiPackage>
+                            <modelPackage>com.zxc.cxc.openapi.model</modelPackage>
+                            <packageName>com.zxc.cxc.openapi</packageName>
                             <templateResourcePath>
                                 ${project.basedir}/src/main/resources/templates/java-spring</templateResourcePath>
                             <configHelp>false</configHelp>
