@@ -2,8 +2,6 @@ package com.zxc.cxc.web.homepage.service;
 
 import static com.zxc.cxc.jooq.generated.Tables.HOME_PAGE_INFO;
 
-// import static com.zxc.cxc.jooq.generated.Tables.HOME_PAGE_INFO;
-
 import org.jooq.DSLContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,7 +20,7 @@ public
 
     HomePageInfoRecord homePageInfoRecord = dslContext.select()
                                                 .from(t1)
-                                                .where(t1.INTRO.like("%llo$"))
+                                                .where(t1.INTRO.like("%llo%"))
                                                 .fetchAnyInto(t1);
 
     HomePageInfoVO homePageInfoVO =
