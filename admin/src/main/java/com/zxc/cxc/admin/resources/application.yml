@@ -3,4 +3,4 @@ server:
   port: 9010
 spring:
   application:
-    name: zxc-cxc-web
+    name: zxc-cxc-admin
