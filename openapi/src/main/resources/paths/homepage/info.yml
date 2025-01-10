@@ -14,6 +14,6 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../schemas/HomePageInfo.yml
+            $ref: ../../schemas/HomePageInfoVO.yml
     default:
       $ref: ../../responses/UnexpectedError.yml

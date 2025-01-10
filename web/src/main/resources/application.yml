@@ -1,6 +1,16 @@
-debug: true
 server:
   port: 9010
 spring:
   application:
     name: zxc-cxc-web
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/zixiDatabase
+    username: root
+    password: root
+logging:
+  level:
+    org:
+      jooq:
+        tools:
+          LoggerListener: DEBUG

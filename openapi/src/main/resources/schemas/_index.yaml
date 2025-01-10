@@ -1,5 +1,5 @@
-HomePageInfo:
-  $ref: ./HomePageInfo.yml
+HomePageInfoVO:
+  $ref: ./HomePageInfoVO.yml
 BaseResponse:
   $ref: ./BaseResponse.yml
 Error:
