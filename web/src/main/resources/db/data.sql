@@ -1,10 +1,32 @@
-DELETE FROM user;
+DELETE FROM home_page_info;
 
 INSERT INTO
-    user (id, name, email, phone, address, remark, role, status, create_time, update_time, deleted)
+    home_page_info (id, intro, sub_intro, avatar, create_time, update_time, deleted)
 VALUES
-    (1, 'Dale', 'dale@example.com', 123456789, 'Beijing', 'For Test', 1, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0),
-    (2, 'Alice', 'alice@example.com', 987654321, 'Shanghai', 'Sample User', 2, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0),
-    (3, 'Bob', 'bob@example.com', 555555555, 'New York', 'Another User', 3, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0),
-    (4, 'Charlie', 'charlie@example.com', 444444444, 'London', 'Test User', 1, 0, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0),
-    (5, 'Eve', 'eve@example.com', 333333333, 'Berlin', 'Example User', 2, 1, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 0)
+    (
+        1,
+        'Hello, World!',
+        'Welcome to my blog.',
+        'https://cdn.jsdelivr.net/gh/zhongzihao18/blog-pic/blog20210823124848.png',
+        '2021-08-23 12:48:48',
+        '2021-08-23 12:48:48',
+        0
+    ),
+    (
+        2,
+        'Hello Again!',
+        'Exploring tech and code.',
+        'https://example.com/avatar2.png',
+        '2024-01-10 09:00:00',
+        '2024-01-10 09:00:00',
+        0
+    ),
+    (
+        3,
+        'Welcome!',
+        'Sharing development insights.',
+        'https://example.com/avatar3.png',
+        '2024-01-10 10:30:00',
+        '2024-01-10 10:30:00',
+        0
+    );
