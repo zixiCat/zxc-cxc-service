@@ -84,7 +84,11 @@
                                 <openApiNullable>false</openApiNullable>
                                 <interfaceOnly>true</interfaceOnly>
                                 <useSpringBoot3>true</useSpringBoot3>
+
                                 <useResponseEntity>false</useResponseEntity>
+                                <useSpringController>true</useSpringController>
+                                <!-- <useOptional>true</useOptional> -->
+                                <useSwaggerUI>true</useSwaggerUI>
                                 <skipDefaultInterface>true</skipDefaultInterface>
                             </configOptions>
                         </configuration>
