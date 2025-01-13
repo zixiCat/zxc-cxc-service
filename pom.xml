@@ -14,10 +14,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>admin</module>
-		<module>web</module>
 		<module>openapi</module>
 		<module>jooq</module>
+		<module>admin</module>
+		<module>web</module>
 	</modules>
 	<name>zxc-cxc</name>
 	<description>ZXC CXC Service</description>
