@@ -1,0 +1,21 @@
+version: '3.0'
+
+services:
+  db:
+    image: mysql:8
+    container_name: zxc_cxc_service_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: zixiDatabase
+      MYSQL_USER: zxc
+      MYSQL_PASSWORD: zxc
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
+    networks:
+      - mysql_network
+
+networks:
+  mysql_network:
+    driver: bridge
