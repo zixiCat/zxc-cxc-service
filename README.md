@@ -9,14 +9,14 @@
 - Maven 3.X
 - MySQL 8.X
 
-## Init Database
+## Initial Setup
 
-Running MySQL8 Service,and initialize `zixiDatabase` database using the `init.sql` script
+Run MySQL8 Service, and initialize `zixiDatabase` database using the `init.sql` script
 ```sh
 docker-compose up
 ```
 
-Running the Application
+Compile the project, and generate the JOOQ classes and the OpenAPI Spec classes
 ```sh
 mvn clean compile
 ```
