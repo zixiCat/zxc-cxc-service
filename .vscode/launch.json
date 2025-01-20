@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ZXC CXC Web",
+      "request": "launch",
+      "mainClass": "com.zxc.cxc.web.Main",
+      "projectName": "web",
+      "args": "--logging.level.root=WARN",
+    },
+    {
+      "type": "java",
+      "name": "ZXC CXC Admin",
+      "request": "launch",
+      "mainClass": "com.zxc.cxc.admin.Main",
+      "projectName": "admin",
+      "args": "--logging.level.root=WARN",
+    }
+  ]
+}
