@@ -1,0 +1,11 @@
+post:
+  summary: User sign-in
+  description: Sign in with username and password
+  tags:
+    - auth
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../schemas/SignInRequest.yml

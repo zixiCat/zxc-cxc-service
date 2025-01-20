@@ -7,9 +7,12 @@ servers:
   - url: http://127.0.0.1:9010/
 tags:
   - name: homepage
+  - name: auth
 paths:
   /homepage/info:
     $ref: ./paths/homepage/info.yml
+  /auth/signIn:
+    $ref: ./paths/auth/signIn.yml
 components:
   schemas:
     $ref: ./schemas/_index.yaml
