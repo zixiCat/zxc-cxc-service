@@ -10,7 +10,7 @@ services:
       MYSQL_USER: zxc
       MYSQL_PASSWORD: zxc
     volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./sql-scripts:/docker-entrypoint-initdb.d
     ports:
       - "3306:3306"
     networks:
