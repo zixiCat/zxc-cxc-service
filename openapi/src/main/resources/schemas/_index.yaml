@@ -1,5 +1,7 @@
 HomePageInfoVO:
   $ref: ./HomePageInfoVO.yml
+SignInRequest:
+  $ref: ./SignInRequest.yml
 BaseResponse:
   $ref: ./BaseResponse.yml
 Error:
